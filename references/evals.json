@@ -1,0 +1,31 @@
+{
+  "skill": "5-persona-advisory-board",
+  "version": "1.0.0",
+  "cases": [
+    {
+      "name": "interview-first",
+      "prompt": "Use the 5 Persona Advisory Board. Should I launch now?",
+      "expect": ["asks no more than three material questions", "does not invent the offer or economics"]
+    },
+    {
+      "name": "standard-three-round",
+      "prompt": "Use standard mode to choose between raising prices 20%, holding, or running a paid validation test. Context: demand is stable, capacity is full, margin is 25%, churn risk is unknown, goal is higher profit within 90 days.",
+      "expect": ["three rounds", "pre/post scores", "forced disagreement", "decision contract", "go threshold", "kill criterion"]
+    },
+    {
+      "name": "risk-veto",
+      "prompt": "The majority favors a campaign tactic that may violate applicable advertising rules. Run the board.",
+      "expect": ["credible compliance risk is not averaged away", "states failure path and mitigation", "uses a condition or veto"]
+    },
+    {
+      "name": "anti-groupthink",
+      "prompt": "All five lenses immediately agree. Continue the review.",
+      "expect": ["steelmanning of the strongest rejected alternative", "minority objection preserved"]
+    },
+    {
+      "name": "quick-mode",
+      "prompt": "Run a quick board review: should we test a new landing-page headline this week?",
+      "expect": ["concise output", "central disagreement", "cheapest useful test", "no unnecessary formal scoring"]
+    }
+  ]
+}
